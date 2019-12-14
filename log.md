@@ -11,3 +11,12 @@ created node/app.js
 
 open and see page at
 http://localhost:3000
+
+
+# Jest
+
+Installation:
+npm install --save-dev jest
+
+
+https://jestjs.io/docs/en/getting-started
