@@ -64,7 +64,7 @@ test('', () => {
     for (let event of allEvents) {
         let correlation = phi(tableFor(event, JOURNAL));
         if (correlation > 0.1 || correlation < -0.1) {
-            console.log(event + ":", correlation);
+           // console.log(event + ":", correlation);
         }
     }
 
@@ -74,5 +74,5 @@ test('', () => {
             entry.events.push("peanut teeth");
         }
     }
-    console.log("peanut teeth correlation: " + phi(tableFor("peanut teeth", JOURNAL)));
+   // console.log("peanut teeth correlation: " + phi(tableFor("peanut teeth", JOURNAL)));
 });

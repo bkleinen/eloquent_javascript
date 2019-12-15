@@ -3,8 +3,7 @@ test('var and let', () => {
     if (true) {
         let y = 20;
         var z = 30;
-        console.log(x + y + z);
-        // → 60
+        expect(x + y + z).toBe(60);
     }
 // y is not visible here
    // expect(y).toBe(undefined);

@@ -2,7 +2,11 @@
 test('fractional number', () => {
   expect(9.81).toBe(9.81);
 });
+// fractional number
+test('fractional number type', () => {
+  expect(typeof 9.81).toBe("number");
 
+});
 test('arithmetic', () => {
   expect(100 + 4 * 11).toBe(144);
 });
@@ -32,26 +36,24 @@ test('String interpolations', () => {
 
 test('type of',() => {
   expect(typeof 4.5).toBe('number')
-})
+});
 
 test('less than for strings',() => {
   expect("AA" < "AB").toBe(true)
-})
+});
 
 test('unequal strings',() => {
   expect("Itchy" != "Scratchy").toBe(true)
-})
+});
 
 
 test('equal strings',() => {
   expect("Apple" == "Orange").toBe(false)
-})
-
-console.log(true ? 1 : 2);
+});
 
 test('Ternary Operator',() => {
   expect(true ? 1 : 2).toBe(1)
-})
+});
 
 // null and undefined
 
@@ -64,31 +66,31 @@ test('',() => {
 
 test('conversion of null',() => {
   expect(8 * null).toBe(0)
-})
+});
 
 test('string to number',() => {
   expect("5" - 1).toBe(4)
-})
+});
 
 test('number to string with concatenation',() => {
   expect("5" + 1).toBe("51")
-})
+});
 
 test('no conversion for *',() => {
   expect("five" * 2).toBe(NaN)
-})
+});
 
 test('falsey',() => {
   expect(false == 0).toBe(true)
-})
+});
 
 // Short-CCicuiting of logical operators
 
 
 test('or, second value',() => {
   expect(null || "user").toBe("user")
-})
+});
 
 test('or, first value',() => {
   expect("Agnes" || "user").toBe("Agnes")
-})
+});
