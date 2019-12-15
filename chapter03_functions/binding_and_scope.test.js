@@ -1,16 +1,17 @@
-test('var and let', () => {
+test('var leaks into function scope, let stays in block', () => {
     let x = 10;
     if (true) {
         let y = 20;
         var z = 30;
         expect(x + y + z).toBe(60);
     }
-// y is not visible here
-   // expect(y).toBe(undefined);
-// z is visible here
-    expect(z).toBe(30);
-    // x as well
+    // y is not visible here
+    expect(() => y).toThrow(ReferenceError);
 
+    // z is visible here
+    expect(z).toBe(30);
+
+    // x as well
     expect(x + z).toBe(40)
 });
 

@@ -26,7 +26,7 @@ test('stack', () => {
         //expect(chicken()).toBe("");
         expect(() => {
             chicken();
-        }).toThrow();
+        }).toThrow(RangeError); // RangeError: Maximum call stack size exceeded
     }
 )
 ;
