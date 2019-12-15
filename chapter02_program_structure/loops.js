@@ -11,7 +11,7 @@ while (number <= 12) {
 }
 
 let counter =  0;
-do {w
+do {
     counter += 1;
     console.log(counter);
 } while (!counter > 10);
