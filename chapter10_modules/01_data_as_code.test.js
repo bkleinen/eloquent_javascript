@@ -1,15 +1,15 @@
-const x = 1;
+const x = 13;
 function evalAndReturnX(code) {
     eval(code);
     return x;
 }
-let s= "var x = 2";
+let s= "var x = 4";
 test('eval in function', () => {
-    expect(evalAndReturnX()).toBe(2);
-    expect(x).toBe(1);
+    expect(evalAndReturnX(s)).toBe(4);
+    expect(x).toBe(13);
 });
 
 test('eval directly', () => {
-    expect(eval(s)).toBe(2);
-    expect(x).toBe(2);
+    eval(s);
+    expect(x).toBe(4);
 });

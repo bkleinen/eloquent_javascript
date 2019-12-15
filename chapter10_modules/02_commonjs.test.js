@@ -1,5 +1,7 @@
 // npm install dijkstrajs
 const {find_path} = require("dijkstrajs");
+const robots = require('./07_robot.js');
+roadGraph = robots.roadGraph;
 
 let graph = {};
 for (let node of Object.keys(roadGraph)) {
@@ -9,5 +11,5 @@ for (let node of Object.keys(roadGraph)) {
     }
 }
 test('dijkstra', () => {
-    expect(find_path(graph, "Post Office", "Cabin")).toBe(["Post Office", "Alice's House", "Cabin"]);
+    expect(find_path(graph, "Post Office", "Cabin")).toStrictEqual(["Post Office", "Alice's House", "Cabin"]);
 });

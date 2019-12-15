@@ -26,12 +26,12 @@ test('A whitespace character followed by a period, comma, colon, or semicolon', 
         ["escape the period"]);
 });
 test('A word longer than six letters', () => {
-    verify(/\w{6,}/,
+    verify(/\w{7,}/,
         ["hottentottententen"],
         ["no", "hotten totten tenten"]);
 });
 test('A word without the letter e (or E)', () => {
-    verify(/([a-d,f-z])*/,
+    verify(/\b[^E^e\s]+\b/,
         ["red platypus", "wobbling nest"],
         ["earth bed", "learning ape", "BEET"]);
 });
