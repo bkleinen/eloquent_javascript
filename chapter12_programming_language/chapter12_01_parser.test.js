@@ -24,7 +24,7 @@ test('parse program', () => {
 
 
 test('parse +', () => {
-    let result = egg.parse("+(a, 10)")
+    let result = egg.parse("+(a, 10)");
     // → {type: "apply",
 //    operator: {type: "word", name: "+"},
 //    args: [{type: "word", name: "a"},
