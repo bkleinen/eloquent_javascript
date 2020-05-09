@@ -2,6 +2,8 @@ test('reduce', () => {
     expect([1, 2, 3, 4, 5].reduce((acc, val) => acc + val)).toBe(15);
 
 });
+
+
 test('flatten', () => {
     let flatten = (arrays) => {
         return arrays.reduce((acc, arr) => {

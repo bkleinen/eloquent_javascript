@@ -6,6 +6,7 @@
     "jest": "^25.5"
   },
   "dependencies": {
+    "date-names": "^0.1.13",
     "dijkstrajs": "^1.0.1",
     "ini": "^1.3.5"
   }

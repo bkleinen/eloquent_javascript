@@ -1,3 +1,9 @@
+
+test('regex from string',() =>{
+    let regexp = new RegExp("abc");
+    expect('abcd').toMatch(regexp);
+    expect('abxcd').not.toMatch(regexp);
+})
 test('car and cat', () => {
     verify(/ca(r|t)/,
         ["my car", "bad cats"],

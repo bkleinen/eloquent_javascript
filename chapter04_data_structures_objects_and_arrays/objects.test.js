@@ -62,3 +62,11 @@ test('const objects', () => {
     expect(score.visitors).toBe(1);
 
 });
+
+test('check if field is defined', () =>{
+    const score = {visitors: 0, home: 0};
+    const fieldNameDefined = "visitors"
+    const fieldNameUndefined = "all"
+    expect(score[fieldNameDefined] == undefined).toBe(false)
+    expect(score[fieldNameUndefined] == undefined).toBe(true)
+})
