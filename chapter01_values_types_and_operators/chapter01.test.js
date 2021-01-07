@@ -24,6 +24,12 @@ test('-1/0', () => {
   expect(-1/0).toBe(-Infinity);
 });
 
+//integer division
+
+test('div',()=>{
+    expect(Math.floor(27 / 10)).toBe(2)
+    expect((27 % 10)).toBe(7)
+})
 
 test('String concatenation', () => {
   expect("con" + "cat" + "e" + "nate").toBe("concatenate");
