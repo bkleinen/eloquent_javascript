@@ -20,7 +20,7 @@ describe("async and await", () => {
         const result = hello()
         expect(result instanceof Promise).toBe(true);
     })
-    test('needs to be continued!',()=>{
+    test.skip('needs to be continued!',()=>{
 
         expect(true).toBe(false)
     })

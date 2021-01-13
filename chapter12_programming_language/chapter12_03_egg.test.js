@@ -1,5 +1,5 @@
 const egg = require("./egg.js");
-test('number', () => {
+test.skip('number', () => {
     let program = "8";
     let parse = egg.parse(program);
     expect(parse.type).toBe("value");

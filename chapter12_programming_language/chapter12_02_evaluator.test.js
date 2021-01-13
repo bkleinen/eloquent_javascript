@@ -1,6 +1,6 @@
 const egg = require("./egg.js");
 
-test('xx', () => {
+test.skip('xx', () => {
 
     let program = `do(define(x, 10),
    if(>(x, 5),
@@ -11,7 +11,7 @@ test('xx', () => {
     expect(result).toBe(1);
 });
 
-test('if', () => {
+test.skip('if', () => {
 
     let program = `do(define(x, 10),
    if(>(x, 5),
